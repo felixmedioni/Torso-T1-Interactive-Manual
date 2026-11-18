@@ -123,7 +123,7 @@ export default function Device({
               y={y}
               size={HOTSPOT_SIZES.vb}
               color="#e87a0a"
-              title={isFrench ? `Bouton de valeur ${vb}` : `Value Button ${vb}`}
+              title={isFrench ? `Bouton de valeur ${vb}` : language.startsWith('es') ? `Botón de valor ${vb}` : `Value Button ${vb}`}
               isSelected={false}
               isHinted={false}
               onClick={(event) => {
@@ -136,8 +136,8 @@ export default function Device({
           {vbButton && (
             <button
               type="button"
-              aria-label={isFrench ? 'Zone VBX' : 'VBX area'}
-              title={isFrench ? 'Zone VBX' : 'VBX area'}
+              aria-label={isFrench ? 'Zone VBX' : language.startsWith('es') ? 'Zona VBX' : 'VBX area'}
+              title={isFrench ? 'Zone VBX' : language.startsWith('es') ? 'Zona VBX' : 'VBX area'}
               className={`t1-hotspot-vbx-zone ${isVBSelected ? 'is-selected' : ''} ${isVBHinted ? 'is-hinted' : ''}`}
               style={{
                 left: `${VBX_ZONE.x}%`,

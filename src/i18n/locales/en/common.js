@@ -21,6 +21,7 @@ const enCommon = {
       options: {
         fr: 'French',
         en: 'English',
+        es: 'Spanish',
       },
     },
     deviceHint: {

@@ -11,6 +11,7 @@ function normalizeLanguage(input) {
 const LANGUAGE_META = {
   fr: { flag: '🇫🇷' },
   en: { flag: '🇬🇧' },
+  es: { flag: '🇨🇴' },
 }
 
 export default function LanguageSelector() {

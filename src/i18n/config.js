@@ -10,8 +10,13 @@ import enQuickref from './locales/en/quickref.js'
 import enStructure from './locales/en/structure.js'
 import enChangelog from './locales/en/changelog.js'
 import enControls from './locales/en/controls.js'
+import esCommon from './locales/es/common.js'
+import esQuickref from './locales/es/quickref.js'
+import esStructure from './locales/es/structure.js'
+import esChangelog from './locales/es/changelog.js'
+import esControls from './locales/es/controls.js'
 
-export const I18N_LANGUAGES = ['fr', 'en']
+export const I18N_LANGUAGES = ['fr', 'en', 'es']
 export const I18N_DEFAULT_LANGUAGE = 'fr'
 export const I18N_STORAGE_KEY = 'torso-t1-manual.language'
 
@@ -28,7 +33,9 @@ function resolveInitialLanguage() {
   if (storedLanguage) return storedLanguage
 
   const browserLanguage = String(window.navigator.language || '').toLowerCase()
-  return browserLanguage.startsWith('fr') ? 'fr' : 'en'
+  if (browserLanguage.startsWith('fr')) return 'fr'
+  if (browserLanguage.startsWith('es')) return 'es'
+  return 'en'
 }
 
 i18n
@@ -48,6 +55,13 @@ i18n
         structure: enStructure,
         changelog: enChangelog,
         controls: enControls,
+      },
+      es: {
+        common: esCommon,
+        quickref: esQuickref,
+        structure: esStructure,
+        changelog: esChangelog,
+        controls: esControls,
       },
     },
     lng: resolveInitialLanguage(),

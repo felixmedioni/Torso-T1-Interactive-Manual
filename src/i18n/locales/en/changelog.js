@@ -13,6 +13,29 @@ const enChangelog = {
   },
   versions: [
   {
+    "version": "2.1.5",
+    "date": "August 5, 2026",
+    "type": "bugfix",
+    "entries": {
+      "bugfixes": [
+        "Fixed an issue where TEMP + SAVE jumped to the beginning of the sequence.",
+        "Fixed an issue where COPY/PASTE BANKS could delete patterns and tracks in some conditions.",
+        "T1 Config: all CV/GATE settings are accessible again.",
+        "T1 Config: ERASE ALL did not erase everything in some cases."
+      ]
+    }
+  },
+  {
+    "version": "2.1.4",
+    "date": "May 27, 2026",
+    "type": "bugfix",
+    "entries": {
+      "bugfixes": [
+        "New T1 Config version: saving and loading backups could time out for some users."
+      ]
+    }
+  },
+  {
     "version": "2.1.3",
     "date": "March 2, 2026",
     "type": "bugfix",

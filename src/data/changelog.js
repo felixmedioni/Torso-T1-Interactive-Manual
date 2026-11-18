@@ -1,5 +1,28 @@
 export const VERSIONS = [
   {
+    version: '2.1.5',
+    date: '5 août 2026',
+    type: 'bugfix',
+    entries: {
+      bugfixes: [
+        'Correction d\'un bug où TEMP + SAVE revenait au début de la séquence.',
+        'Correction d\'un bug où COPY/PASTE BANKS pouvait supprimer des patterns et des pistes dans certains cas.',
+        'T1 Config : tous les réglages CV/GATE sont de nouveau accessibles.',
+        'T1 Config : ERASE ALL n\'effaçait pas tout dans certains cas.',
+      ],
+    },
+  },
+  {
+    version: '2.1.4',
+    date: '27 mai 2026',
+    type: 'bugfix',
+    entries: {
+      bugfixes: [
+        'Nouvelle version de T1 Config : la sauvegarde et le chargement des backups pouvaient expirer chez certains utilisateurs.',
+      ],
+    },
+  },
+  {
     version: '2.1.3',
     date: '2 mars 2026',
     type: 'bugfix',
